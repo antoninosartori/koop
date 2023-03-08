@@ -180,7 +180,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #47b2e4;
-  font-weight: bold;
 }
 
 .navbar .getstarted {
@@ -1087,10 +1086,10 @@ section {
   background: #fff;
   transition: 0.5s;
 }
-
+/* 
 .team .team-card {
-  /* margin: auto; */
-}
+  margin: auto;
+} */
 
 .team .member .pic {
   overflow: hidden;
