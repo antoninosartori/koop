@@ -19,7 +19,7 @@ newsletter_form.addEventListener('submit', (event) => {
     newsletter_sentMessage.classList.add('newsletter_inactive');
     newsletter_errorMessage.classList.add('newsletter_inactive');
 
-    let email = event.target.email.value;
+    const email = event.target.email.value;
     const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if(email === '') {
@@ -61,7 +61,6 @@ newsletter_form.addEventListener('submit', (event) => {
             newsletter_sentMessage.classList.remove('newsletter_inactive');
             newsletter_errorMessage.classList.add('newsletter_inactive');
             console.log(response)
-            email = ''
         })
         .catch(err => {
             console.error(err)
