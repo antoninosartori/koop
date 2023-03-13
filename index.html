@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX7MFETYTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DX7MFETYTJ');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Koop Consultora Turística</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Equipo de profesionales con un mismo objetivo, fortalecer la actividad turística." name="description">
+  <meta content="consultora, turismo, koop, viaje, paseo, consulta, asesoria, asistencia, viajero, lugares, turistico" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -319,9 +328,15 @@
           <div class="col-lg-6">
             <h4>Newsletter</h4>
             <p>Entérate de todas nuestras novedades</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Enviar">
+            <form class="newsletter_form" method="post">
+              <input class="newsletter_input" type="email" name="email">
+              <input class="newsletter_button" type="submit" value="Enviar">
             </form>
+            <div class="my-3">
+              <div class="newsletter_loading newsletter_inactive">Suscribiendose...</div>
+              <div class="newsletter_error-message newsletter_inactive"> <span class="spanError"></span> </div>
+              <div class="newsletter_sent-message newsletter_inactive">Te has suscripto correctamente, muchas gracias!</div>
+            </div>
           </div>
         </div>
       </div>
@@ -389,6 +404,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="./forms/newsletter.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

@@ -52,3 +52,24 @@
         height: 200px;
     }
 }
+
+/* newsletter */
+.newsletter_input{
+    outline: none;
+}
+
+.newsletter_loading{
+    color: #00aeff;
+}
+
+.newsletter_error-message{
+    color: rgb(189, 0, 0);
+}
+
+.newsletter_sent-message{
+    color: rgb(0, 187, 0);
+}
+
+.newsletter_inactive{
+    display: none;
+}
